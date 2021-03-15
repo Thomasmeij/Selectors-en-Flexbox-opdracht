@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    a:link{
+        color: hsl(104, 79%, 56%);
+    }
+    a:visited{
+        color: hsl(359, 79%, 56%);
+    }
+    a:hover{
+        color: hsl(227, 50%, 56%);
+    }
+    input.submit-email {
+        background-color: dodgerblue;
+    }
+    input:focus {
+        border-color: blue;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Bree-serif, serif;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -9,17 +29,17 @@
 <body>
     <div class="wrapper">
         <header>
-            <nav>
+            <nav style="text-decoration: none">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Places</a></li>
-                    <li><a href="#">Get in Touch</a></li>
+                    <li> <a style= "color: hsl(110, 29%, 52%)" href="#" >About</a></li>
+                    <li><a style="color: hsl(110, 29%, 52%)" href="#">Articles</a></li>
+                    <li><a style="color: hsl(110, 29%, 52%)" href="#">Places</a></li>
+                    <li><a style="color: hsl(110, 29%, 52%)" href="#">Get in Touch</a></li>
                 </ul>
             </nav>
         </header>
 
-        <img src="assets/header-image.jpg" alt="Tutti">
+        <img src="assets/header-image.jpg" alt="Tutti" id="Ciao" width="100%">
 
         <main>
             <h1>Latest Articles</h1>
@@ -46,13 +66,13 @@
                     <h3>Stay up to date of all the travels</h3>
                     <p>Vestibulum <a href="#">erat augue</a>, consequat non tellus ac, posuere scelerisque augue.</p>
                     <input type="text" placeholder="Enter email...">
-                    <input type="submit" value="Signup">
+                    <input class="submit-email" type="submit" value="Signup">
                 </div>
             </div>
         </main>
 
-        <footer>
-            <span>&copy;2020 Ciao Tutti Blog</span>
+        <footer class="main-footer">
+            <span style="font-size: smaller" class="copyright">&copy;2020 Ciao Tutti Blog</span>
         </footer>
     </div>
 </body>
